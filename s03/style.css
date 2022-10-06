@@ -1,0 +1,114 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: brown;
+}
+
+/* ID Selector */
+#title-1{
+    color: aqua;
+}
+
+/* Class Selector */
+.title-2{
+    color: darkred;
+    text-align: center;
+}
+
+/* Attribute Selector */
+[type="text"]{
+    background-color: aquamarine;
+}
+
+/* Descendant Selector
+- selects/targets "all elements" that matches the specified element.
+
+Syntax: first element child element {
+    property: value;
+}
+*/
+
+/* div p{
+    background-color: red;
+} */
+
+
+
+
+/* Child Selector
+- it selects or targets "all" elements that are direct children of a specified element. 
+ */
+/* div > p {
+    background-color: chocolate;
+} */
+
+
+
+
+
+
+/* Adjacent Sibling Selector (+)
+- it selects or targets an element that is directly after the first selector
+*/
+
+/* p + p{
+    background-color: maroon;
+}
+
+div + p{
+    background-color: #e228bd;
+} */
+
+
+
+
+
+/* General Sibling Selector */
+
+/* p ~ p{
+    background-color: cornflowerblue;
+} */
+
+
+
+
+/* Medium devices (Landscape tablet, 768 px and up */
+
+@media only screen and (min-width: 500px) {
+    .screen {background-color: pink;}
+}
+
+
+/* Large Devices (Laptops and desktops */
+@media only screen and (min-width: 900px) {
+    .screen {background-color:blue}
+}
+
+
+
+
+/* Pseudo Class
+selector: pseudo-class{prperty:value}
+*/
+
+/* Unlisted link */
+a:link{
+    color:red;
+}
+
+/* Visited link */
+a:visited{
+    color: green;
+}
+
+/* Mouse over link */
+a:hover{
+    color:orange;
+}
+
+/* Selected Link */
+a:active{
+    color: dodgerblue;
+}
