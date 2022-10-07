@@ -1,0 +1,152 @@
+/* UNIVERSAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND IMAGE */
+body {
+    background-image:url(formbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* REQUEST FORM CONTAINER */
+.reqBox {
+    border: solid rgb(0, 0, 0);
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    height: 610px;
+}
+
+/* HEADINGS */
+h1{
+    font-family:sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:5px;
+}
+
+/* FIRST NAME / LAST NAME / EMAIL ADDRESS TEXTS */
+.infoFill{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* FIRST NAME / LAST NAME / EMAIL ADDRESS INPUT BOX */
+.inputBox-1{
+    border-style:solid;
+    border-color: black;
+}
+
+/* CONTACT NUMBER TEXT */
+.contact{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:14px;
+}
+
+/* EMPLOYEE TYPE: ONSITE OR WORK FROM HOME */
+.eType{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size:18px;
+}
+
+/* LOCATION TEXT */
+.location{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    margin-left:70px;
+    margin-bottom:0px;
+}
+
+/* LOCATION DESCRIPTION */
+.locSpec{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 14px;
+    margin-left:70px;
+    margin-bottom:14px;
+}
+
+/* SPECIFIED LOCATION INPUT BOX */
+#location{
+border-style: solid;
+border-color: black;
+margin-left: 1px;
+}
+
+/* REQUEST TYPE TEXT */
+.reqType{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-bottom: 8px;
+}
+
+/* REQUEST TYPE SELECT BOX */
+#reqType{
+    border-style: solid;
+    border-color: black;
+
+}
+
+/* REQUEST DESCRIPTION TEXT */
+.reqDesc{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-bottom: 25px;
+}
+
+/* REQUEST DESCRIPTION INPUT BOX */
+#reqDesc{
+    border-style: solid;
+    border-color: black;
+    margin-left: 11px;
+}
+
+/* PICTURE/SCREENSHOT TEXT */
+.picScreen{
+    font-family: 'Times New Roman';
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 70px;
+    margin-bottom: 25px;
+}
+
+/* COLOR CHANGE FOR HYPERLINK */
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:white;
+}

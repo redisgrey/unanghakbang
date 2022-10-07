@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="request.css" rel="stylesheet">
+        <title>Request Form</title>
+    </head>
+
+    <body>
+
+        <!-- REQUEST FORM -->
+        <div class="reqBox">
+            <h1>ABC Company IT Support Request Form</h1>
+
+            <!-- FIRST NAME -->
+            <p class="infoFill">
+                <label for="fname">First Name:</label>
+                <input class="inputBox-1" style="margin-left: 47px;" type="text" name="fname" id="fname" size="55" required>
+            </p>
+
+            <!-- LAST NAME -->
+            <p class="infoFill">
+                <label for="lname">Last Name:</label>
+                <input class="inputBox-1" style="margin-left: 50px;" type="text" name="lname" id="lname" size="55" required>
+            </p>
+
+            <!-- EMAIL ADDRESS -->
+            <p class="infoFill">
+                <label for="emailAdd">Email Address:</label>
+                <input class="inputBox-1" style="margin-left: 20px;" type="email" name="emailAdd" id="emailAdd" size="55" required>
+            </p>
+
+            <!-- CONTACT NUMBER -->
+            <p class="contact">
+                <label for="contact">Contact Number:</label>
+                <input class="inputBox-1" style="margin-left: 4px;" type="text" name="contact" id="contact" size="55" placeholder="Enter your complete phone number with extension or mobile number" required>
+            </p>
+
+            <!-- ONSITE OR WORK FROM HOME -->
+            <p class="eType">
+                <input style="margin-left: 240px;" type="radio" name="eType" id="eType">
+                <label for="eType">Onsite</label>
+                <input style="margin-left: 40px; margin-bottom: 8px;" type="radio" name="eType" id="eType">
+                <label for="eType">Work From Home</label>
+            </p>
+
+            <!-- LOCATION -->
+            <p class="location">
+                Location:
+            </p>
+                <p class="locSpec">
+                For Onsite, please state your Workstation No., Department, Floor and Building<br>
+                For Work From Home, please complete your address and include a landmark nearest to your location.<br>
+                <input style="margin-top: 8px;" type="text" name="location" id="location" size="80">
+                </p>
+            
+            <!-- REQUEST TYPE -->
+            <p class="reqType">
+                <label for="reqType">Service Request Type:</label>
+                <select name="reqType" id="reqType">
+                    <option value="dlSetup">Desktop/Laptop Setup</option>
+                    <option value="dlSupport">Desktop/Laptop Support</option>
+                    <option value="dlMaint">Desktop/Laptop Maintenance</option>
+                    <option value="softInst">Software Installation</option>
+                    <option value="softSupp">Software Support</option>
+                    <option value="cpSetup">Computer Peripheral Setup</option>
+                    <option value="cpTroub">Computer Peripheral Troubleshooting</option>
+                    <option value="cpMaint">Computer Peripheral Maintenance</option>
+                    </select>
+            </p>
+
+            <!-- REQUEST DESCRIPTION -->
+            <p class="reqDesc">
+                <label for="reqDesc">Request Description:</label>
+                <textarea name="reqDesc" id="reqDesc" cols="50" rows="10" placeholder="Explain your service request as detailed as possible."></textarea>
+            </p>
+
+            <!-- ATTACH REFERENCES -->
+            <p class="picScreen">
+                Upload a picture/screenshot for reference.
+                <input type="file" id="picScreen" name="picScreen">
+            </p>
+
+            <!-- SUBMIT AND RESET -->
+            <p>
+                <button style="margin-left: 280px;" type="submit"><a href="requestpopup.html">Submit</a></button>
+                <button style="margin-left: 7px;" type="reset">Reset</button>
+            </p>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,60 @@
+/* UNIVERSAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND IMAGE STYLE */
+body {
+    background-image:url(loginbg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* SIGN IN FORM CONTAINER STYLE*/
+.formBox {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 100px;
+}
+
+/* TEXT STYLE */
+p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CUSTOM MARGIN FOR USERNAME */
+#user{
+    margin-bottom:7px;
+}
+
+/* CUSTOM MARGIN FOR PASSWORD */
+#pass{
+    margin-bottom:3px;
+}
+
+/* TYPE BOX WIDTH FOR USERNAME AND PASSWORD */
+[type="text"]{
+    width: 250px;
+}
+
+[type="password"]{
+    width: 250px;
+}
+
+/* COLOR CHANGE FOR HYPERLINK */
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:white;
+}

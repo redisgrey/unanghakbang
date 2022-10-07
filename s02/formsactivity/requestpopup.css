@@ -1,0 +1,29 @@
+/* UNIVERSAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND IMAGE */
+body {
+    background-image:url(loginpopupbg.jpg);
+}
+
+/* REQUEST SUBMISSION MESSAGE BOX */
+.reqMessbox {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 50px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    width: 800px;
+}
+
+/* REQUEST SUBMISSION MESSAGE */
+.reqMess{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 38px;
+}

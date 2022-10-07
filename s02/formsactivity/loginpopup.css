@@ -1,0 +1,48 @@
+/* UNIVERSAL STYPE */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND IMAGE */
+body {
+    background-image:url(loginpopupbg.jpg);
+}
+
+/* LOG-IN MESSAGE CONTAINER */
+.loginMessbox {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: 50px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    width: 500px;
+}
+
+/* THANK YOU MESSAGE STYLE */
+.thanksMess{
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 38px;
+}
+
+/* CONTINUE TO REQUEST FORM LINK */
+.continueReq{
+    text-align: right;
+    margin-right: 0;
+}
+
+/* COLOR CHANGE FOR HYPERLINK */
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color:white;
+}
