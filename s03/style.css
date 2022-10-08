@@ -112,3 +112,41 @@ a:hover{
 a:active{
     color: dodgerblue;
 }
+
+/* 
+    Pseudo Elements
+    - used to style specific parts of an element
+
+    Common Usage:
+    1. style the first letter
+    2. style the first line
+
+    SYNTAX: selector::pseudo-element {property:value}
+*/
+
+/* first-line - when we shrink or resize our web pages, the first line of a sentence changes */
+
+/* p::first-line{
+    color: #ff0000;
+    font-variant: small-caps;
+} */
+
+p::first-letter{
+    color: brown;
+    font-size: 200%;
+}
+
+/* manipulating pictures */
+#my_dog img{
+     width: 10%;
+     height: 10%;
+     border-radius: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul > li {
+    letter-spacing: 4px;
+}

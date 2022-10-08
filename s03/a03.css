@@ -1,0 +1,46 @@
+/* Change the font-family and the font-size of all elements using the universal selector. */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Change the font-size of h1 using a type selector */
+h1{
+    font-size: 36px;
+}
+
+/* Change the text to all upper case for h2 tags using an id selector */
+#upperText{
+    font-variant: small-caps;
+}
+
+/* Change the background colors of the languages to be learn list items using a class selector. */
+.colorChang{
+    background-color: lightseagreen;
+}
+
+/* Change the border of the tools to be used list items using an attribute selectors */
+img{
+    border-radius: 50%;
+}
+
+/* Change the list style type of other things to be learned using an adjacent sibling selector */
+div + ul{
+    list-style-type: none;
+}
+
+/* Change the dimensions of the image tag using a descendant selector. */
+div img{
+    width: 100px;
+    height: 100px;
+}
+
+/* Change the alignment of the last paragraph using a general sibling selector. */
+ul~p{
+    text-align: right;
+}
+
+/* Change the letter spacing of other things to be learned list items using a child selector. */
+ul > li{
+    letter-spacing: 10px;
+}
