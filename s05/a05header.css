@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Position and style of the main container */
+.header{
+    position: relative;
+    width: 800px;
+    height: 150px;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+/* Style of all divs */
+.divStyle{
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+/* Position and style of each divs */
+.logo{
+    position: absolute;
+    width: 400px;
+    height: 80px;
+}
+
+.top-nav{
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.menu{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 450px;
+    height: 40px;
+}

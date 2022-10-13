@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    position: relative;
+    background-color: rgb(128, 87, 95);
+    margin: 20px;
+}
+
+.staticPosition{
+    border: 5px solid darkred;
+    background-color: pink;
+}
+/* 
+properties top, bottom, left, right are not working because this is a DEFAULT property 
+-even not declared, it will not change because it is DEFAULT
+*/
+
+.relativePosition{
+    position: relative;
+    border: 5px solid blue;
+    background-color: lightgreen;
+    left: 100px;
+}
+/* top, bottom, left and right will work */
+/* freely adjust inside and outside screen*/
+
+.parent2{
+    position: relative;
+    border: 5px solid black;
+}
+
+.absolutePosition{
+    /* position: absolute; */
+    border: 5px solid rgb(2, 46, 15);
+    background-color: rgb(65, 207, 226);
+    top: 0;
+} 
+/* absolute property - removes from document flow */
+/* top, bottom, left, right adjusts according to parent/container = position: relative */
+
+.fixedPosition{
+    /* position: fixed; */
+    border: 5px solid purple;
+    background-color: darksalmon;
+    left: 50px;
+}
+/* adjust according to screen */
+/* stays where you put it - top, bottom, right, left */
+
+.stickyPosition{
+    position: sticky;
+    border: 5px solid rgb(61, 12, 12);
+    background-color: rgb(247, 72, 14);
+    top: 0;
+}
+
+.parent3{
+    position: relative;
+    background-color: darkorange;
+    margin: 20px;
+}
+
+.parent4{
+    position: relative;
+    border: 5px solid black;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
+
+.buttonClick{
+    /* position: fixed; */
+    background-color: springgreen;
+    font-size: 30px;
+    top: 0px;
+}
