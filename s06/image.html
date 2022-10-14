@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="image.css" rel="stylesheet">
+        <title>Image Responsiveness</title>
+    </head>
+
+    <body>
+        <h1>Image Responsiveness</h1>
+
+        <img src="hard.png" alt="drinks" id="responsive" />
+
+        <!-- GOAL making the picture as modal and responsive -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption">HARD DRINKS</div>
+        </div>
+
+        <script>
+            // GET THE MODAL - this will be the one that will pop up   to the screen (black screen)
+            var modal = document.getElementById("myModal");
+
+            // GET THE IMAGE and insert it inside the modal. Use the "alt" text as a caption.
+            var img = document.getElementById("responsive");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("img01");
+
+            // INITIALIZE the var img
+            img.onclick = function()
+            {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // GET the span element that closes the modal.
+            var span = document.getElementsByClassName("close")[0];
+
+            // WHEN the user clicks on <span>/(x), close the Modal.
+            span.onclick = function()
+            {
+                modal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
