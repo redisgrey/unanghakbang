@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* universal style for all navigation button */
+.home, .about, .news, .business, .contact-us{
+    width: 20%;
+    padding: 20px;
+    background-color: rgb(161, 142, 31);
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* style for links */
+a{
+    color: black;
+}
+
+/* style for links when hovered */
+a:hover{
+    color: white;
+}
+
+/* Media Query */
+@media screen and (max-width:1024px){
+    .home, .about, .news, .business, .contact-us{
+        width: 100%;
+        padding: 5px;
+    }
+}

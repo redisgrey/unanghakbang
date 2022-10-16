@@ -1,0 +1,98 @@
+/* 
+
+        Media Query
+    - CSS3 feature that makes a webpage adapt its layout to different screen sizes and media types
+
+    Syntax: 
+
+    @media mediatype and (condition: breakpoint);{
+            cssrule {
+
+            }
+
+    }
+
+        @media (Media Rule)
+    - specify target media types.
+
+
+        Parenthesis
+    - where we set the condition.
+
+
+        Media type
+    -it follows the media rule, it selects or choose sizes
+
+        Concatenate
+    -it joins the statement using the "and" keyword.
+
+        Breakpoints
+    -it is the size of the screen where layout is changed and adapt the rules inside the query
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.left{
+    background-color: palegreen;
+    padding: 20px;
+    float: left;
+    width: 20%;
+    /* set the width default prior to declaring the media sizes */
+}
+
+.main{
+    background-color: aquamarine;
+    padding: 20px;
+    float: left;
+    width: 60%;
+    /* set the width default prior to declaring the media sizes */
+}
+
+.right{
+    background-color: bisque;
+    padding:20px;
+    float: left;
+    width: 20%;
+    /* set the width default prior to declaring the media sizes */
+}
+
+
+/* use a media query to add a breakpoint */
+
+/* for desktop */
+@media screen and (min-width: 1024p){
+    .left, .main, .right{
+        width: 100%;
+        /* it sets the width into 100% when this media query declaration is set */
+        height: 0;
+    }
+/* the changes are applicable to 1024 px screen size and above */
+}
+
+
+/* for tablet */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .main{
+        position: fixed;
+        width: 100%;
+        top: 100px;
+    }
+
+    .left{
+        width: 50%;
+        position: relative;
+        top: 100px;
+    }
+
+    .right{
+        position:relative;
+        left: 1px;
+        width: 50%;
+        top: 100px;
+    }
+
+
+/* changes are applicable to 768px to 1023px screen sizes only */
+}
