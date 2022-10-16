@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body {
+    background-color: #FFD6EC;
+}
+
+
+.navigation-bar {
+    background-color: #FF74B1;
+    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+ul>li {
+    list-style-type: none;
+}
+
+
+li a{
+    color: black;
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.contact-container {
+    background-color: #FFD6EC;
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    position: fixed;
+    right: 50px;
+
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 5px 2px #FF74B1;
+    text-decoration: underline;
+}
+
+.form-box {
+    margin-top: 30px;
+}
+
+input[type=text], textarea {
+    background-color: #FFD6EC ;
+    width: 50%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid red;
+    background-color: #FFD6EC;
+}
+
+button {
+    background-color: #FF74B1;
+    padding: 10px;
+    margin-bottom: 0;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    color: white;
+}
+
+.mailContainer{
+    position: fixed;
+    right: 100px;
+    top: 210px;
+    display: flex;
+}
+
+#mail-icon {
+    width: 40px;
+    margin-right: 5px;
+}
+
+#fb-icon {
+    width: 40px;
+}
+
+#emailAdd, #facebook {
+    display: flex;
+    align-self: center;
+}
+
+.fbContainer{
+    position: fixed;
+    right: 180px;
+    top: 280px;
+    display: flex; 
+    margin-top: 20px;   
+}
+
+Footer{
+    background-color: #FF74B1;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+ }
