@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/s08/Upgraded Login and IT Service Request Form/Upgraded IT Service Request Form/styles/style.css" rel="stylesheet">
+        <title>Request Form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="parent">
+        <main>
+            <form class="main-container">
+            <div>
+                <h1 class="headings">ABC Company IT Support Request Form</h1>
+            </div>
+            
+            <div class="mb-3">
+                <label for="inputFirstName" class="form-label labels">First Name:</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Johnny" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="inputLastName" class="form-label labels">Last Name:</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Papa" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="inputEmailAddress" class="form-label labels">Email Address:</label>
+                <input type="email" class="form-control" id="inputEmailAddress" aria-describedby="emailHelp" placeholder="johnnypapa@yahoo.com" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="inputContact" class="form-label labels input-style">Contact Number:</label>
+                <input type="text" class="form-control" id="inputContact" placeholder="098765432xx" required>
+            </div>
+
+            <div class="mb-3 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="employeeType" id="employeeType">
+                <label class="form-check-label labels" for="employeeType">
+                  Onsite
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="employeeType" id="employeeType" checked>
+                <label class="form-check-label labels" for="employeeType">
+                  Work from Home
+                </label>
+              </div>
+
+              <div class="mb-3">
+                <label for="inputLocation" class="form-label labels">Location:</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Codeblooded St., Kodego City, Philippines" required>
+                <div class="form-text">For Onsite, please state your Workstation No., Department, Floor and Building</div>
+                <div class="form-text">For Work from Home, please complete your address and include a landmark nearest to your location.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="serviceRequestType" class="form-label labels">Service Request Type:</label>
+                <select class="form-select form-control" aria-label="Default select example" required>
+                    <option value="">-select-</option>
+                    <option value="dlSetup">Desktop/Laptop Setup</option>
+                    <option value="dlSupport">Desktop/Laptop Support</option>
+                    <option value="dlMaint">Desktop/Laptop Maintenance</option>
+                    <option value="softInst">Software Installation</option>
+                    <option value="softSupp">Software Support</option>
+                    <option value="cpSetup">Computer Peripheral Setup</option>
+                    <option value="cpTroub">Computer Peripheral Troubleshooting</option>
+                    <option value="cpMaint">Computer Peripheral Maintenance</option>
+                  </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="requestDescription" class="labels">Request Description:</label>
+                <textarea class="form-control" placeholder="Explain your service request as detailed as possible." id="requestDescription" style="height: 100px;" required></textarea>
+              </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label labels">Upload a picture/screenshot for reference.</label>
+                <input class="form-control" type="file" id="formFile" required>
+            </div>
+
+            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+            <input class="btn btn-secondary resetButton mt-3" type="reset" value="Reset">
+            </form>
+        </main>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+$primary-bgcolor: #0c0e0c;
+$secondary-bgcolor: #d8323d65;
+$primary-color: #eaebea;
+$primary-ffamily: 'Poppins', sans-serif;
+$fsize-heading: 35px;
+$fsize-normaltxt: 16px;
+
+@mixin bgimg{
+    background-image: url(/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin special-text{
+    font-family: $primary-ffamily;
+    font-size: $fsize-heading;
+    color: $primary-color;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 8px black;
+}
+
+@mixin labels{
+    font-family: $primary-ffamily;
+    font-size: $fsize-normaltxt;
+    color: $primary-color;   
+    font-weight: 500;
+}
+
+.parent{
+    @include bgimg;
+}
+
+.form-control:valid {
+    background-color:  $secondary-bgcolor;
+    color: $primary-color;
+}
+
+.headings{
+    @include special-text;
+}
+
+.labels{
+    @include labels;
+}
+
+
+.main-container{
+    width: 40%;
+    border: 5px solid $secondary-bgcolor;
+    padding: 20px;
+    max-width: 700px;
+    min-width: 500px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+button{
+    width: 50%;
+}
+
+.resetButton{
+    width: 49%;
+}

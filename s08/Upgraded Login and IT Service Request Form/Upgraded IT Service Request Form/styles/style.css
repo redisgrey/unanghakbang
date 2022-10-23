@@ -1,0 +1,44 @@
+.parent {
+  background-image: url(/s08/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control:valid {
+  background-color: rgba(216, 50, 61, 0.3960784314);
+  color: #eaebea;
+}
+
+.headings {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  color: #eaebea;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 8px black;
+}
+
+.labels {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #eaebea;
+  font-weight: 500;
+}
+
+.main-container {
+  width: 40%;
+  border: 5px solid rgba(216, 50, 61, 0.3960784314);
+  padding: 20px;
+  max-width: 700px;
+  min-width: 500px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+button {
+  width: 50%;
+}
+
+.resetButton {
+  width: 49%;
+}/*# sourceMappingURL=style.css.map */
