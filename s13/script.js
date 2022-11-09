@@ -196,3 +196,207 @@ console.log(false==1);
 
 console.log(4.00 == 4);
 // true
+
+
+// type coercion - automatic conversion of values from one data type to another
+
+
+
+// parseInt() convert into whole numbers
+
+// parseFloat() - used for decimal numbers
+
+let ex = 75.68;
+console.log(parseInt("75.68"));
+console.log(parseFloat("75.68"));
+console.log(parseInt("75.68").toFixed(2));
+// .toFixed() - displays decimal places
+console.log(parseFloat("75.68").toFixed(3));
+
+
+
+// Strict Equality Operator (===)
+// - doesnt practice coercion
+// - exact dapat
+
+
+console.log(1 === 1);
+// true
+
+console.log(5 === "5");
+// false
+
+console.log(true === 1);
+// false
+
+console.log(null === undefined);
+// null - intentional absence
+// undefined - not assigned
+// false
+
+console.log("james" === "daniel");
+// false
+
+console.log(true === true);
+// true
+
+console.log(false === false);
+// true
+
+
+// Inequality Operators (!=)
+// Loose Inequality Operator
+// compares if values are different
+// coercion works
+
+console.log(false != true);
+// true
+
+console.log(3 != 3.00);
+// false
+
+console.log(null != undefined);
+// false
+
+console.log(true != 1);
+// false
+
+
+// STRICT INEQUALITY OPERATOR (!==)
+
+console.log(false !== true);
+// true
+
+console.log(4 !== 4.00);
+// false
+
+console.log(null !== undefined);
+// true
+
+console.log(true !== 1);
+// true
+
+
+// GREATER THAN (>)
+console.log(100>75);
+// true
+
+console.log(70>180);
+// false
+
+
+// LESS THAN (<)
+console.log(45<50);
+// true
+
+console.log(67<45);
+// false
+
+
+// GREATER THAN OR EQUAL TO (>=)
+console.log(45>=45);
+// true
+
+console.log(44 >= 45);
+// false
+
+
+// LESS THAN OR EQUAL TO (<=)
+console.log(100 <= "100");
+// true
+
+console.log(1 < 0.5);
+// false
+
+
+// LOGICAL OPERATORS
+
+// AND OPERATORS (&&)
+// when there is false in statements it set as false
+console.log(true && true);
+// true
+
+console.log(true && false);
+// false
+
+console.log(false && true);
+// false
+
+console.log(false && false);
+// false
+
+console.log(("Max && Max") && (undefined == null));
+// true
+
+console.log(("Max && Max") && (undefined === null));
+// false
+
+let kei = true;
+console.log(kei > 2 && kei < 2);
+// false
+
+let isOnline = true
+let isBoss = false
+let chatSiBoss = isOnline && isBoss
+console.log(chatSiBoss);
+// false
+
+// best practice to declare a boolean use the word "is" before the given word
+
+
+// OR OPERATOR (||)
+// evaluates to true of either of the operand is true
+// if both operands are false the result is false
+
+console.log(true || true);
+// true
+
+console.log(true || false);
+// true
+
+console.log(false || true);
+// true
+
+console.log(false || false);
+// false
+
+
+
+// NOT OPERATOR - OPPOSITE
+console.log(!true);
+// false
+
+console.log(!false);
+// true
+
+let isJem = true;
+let isListening = "1";
+let isPasaway = !isJem === isListening;
+console.log(isPasaway);
+// false
+
+
+let motMot = 27;
+let birthNum = 3;
+let isJowa = !(birthNum > motMot || motMot >= birthNum);
+console.log(isJowa);
+
+
+
+// Exercise
+let isTrue = true;
+let isFalse = false;
+
+let isTralse = !(!isFalse != !isFalse && isFalse !== isTrue || (!isTrue != !isFalse && isFalse != !isTrue));
+
+console.log(isTralse);
+
+// isTralse = !(true != true && false !== true || (false != true && false != false));
+
+// isTralse = !(false && true || (true && false));
+
+// isTralse = !(false || false);
+
+// isTralse = !(false);
+
+// isTralse = true
