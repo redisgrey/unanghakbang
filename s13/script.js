@@ -138,7 +138,7 @@ console.log(i);
 
 // Subtraction Assignment Operator (-=)
 
-console.log(i -= 10);
+// console.log(i -= 10);
 
 
 
@@ -400,3 +400,5 @@ console.log(isTralse);
 // isTralse = !(false);
 
 // isTralse = true
+
+
