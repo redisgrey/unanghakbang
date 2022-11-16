@@ -324,3 +324,115 @@ days.forEach(function (day){
 
 console.log(newDays);
 
+
+
+
+//FILTER
+// it filter outs the elements based on the given conditions
+
+let digits = [1,2,3,4,5];
+
+let newFilter = digits.filter(
+
+    function (element){
+        return element < 3
+    }
+);
+
+console.log(newFilter);
+
+
+
+
+// INCLUDES
+// checks if the element is really inside the array
+// case sensitive
+
+// let pets = ["Shih Tzu", "Hedgehog", "Squirrel", "Rats"];
+
+// let newIncludes = pets.includes("squirrel");
+
+// console.log(newIncludes);
+
+
+let pets = ["dogs", "cats", "birds", "fishes"];
+
+let newIncludes = pets.includes('fishes');
+
+function checker(newIncludes){
+
+    if (newIncludes == true){
+        console.log(newIncludes);
+    }else{
+        console.log(`${newIncludes} not found`)
+    }
+
+    return(newIncludes);
+}
+
+checker(newIncludes);
+
+
+// EVERY()
+// checks if ALL elements passes a given condition
+
+console.log(digits);
+
+let newEvery = digits.every(
+
+    function(element){
+        return element > 0;
+    }
+);
+
+console.log(newEvery);
+// false
+// returns a boolean
+
+
+
+// SOME()
+// checks if atleast one passes the condition
+
+let newSome = digits.some(
+
+    function(element){
+        return element > 2;
+    }
+)
+
+console.log(newSome);
+// true
+// boolean
+
+
+
+
+// REDUCE()
+// it adds all the element in an array from left to right and return a single value
+
+let newReduce = digits.reduce(
+    function(a, b){
+        let total = a + b;
+        return total;
+    }
+)
+
+console.log(newReduce);
+
+console.log(newReduce/digits.length);
+// 3 divides the sum of the array with the number of elements
+
+
+let numeric = [5,11,30,118,634];
+
+let reduceNum = numeric.reduce(
+    function (a, b){
+        let total = a + b;
+        return total;
+    }
+)
+
+console.log(reduceNum);
+
+
