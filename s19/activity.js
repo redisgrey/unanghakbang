@@ -6,6 +6,7 @@ class dataWeight {
         this.name = name;
         this.kilograms = kilograms;
         this.pounds = parseFloat(kilograms * 2.20462).toFixed(2);
+        
     }
 }
 

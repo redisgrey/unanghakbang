@@ -299,6 +299,9 @@ console.log(myNewCar);
 
 // ACTIVITY
 
+
+
+
 // *My Class Based Object Blueprint
 class dataWeight {
     constructor (name, kilograms){
