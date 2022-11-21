@@ -3,24 +3,24 @@ console.log('yo!');
 // ES6 UPDATES (2015)
 
 
-// Exponent Operator //
+//*Exponent Operator //
 
-// // before ES6, Math.pow() is used for exponent operator
+// before ES6, Math.pow() is used for exponent operator
 // const firstNum = Math.pow(8,2);
 // console.log(firstNum);
-// // 64
+// 64
 
-// // IN ES6, ** used for exponent operator
+// IN ES6, ** used for exponent operator
 // const secondNum = 8 ** 2;
 // console.log(secondNum);
-// // 64
+// 64
 
-// // Template Literals //
-// // allows to write strings without using the concatenation operator
+//* Template Literals //
+// allows to write strings without using the concatenation operator
 // let name = "John";
 // let message = "Hello" + " " + name + "! Welcome to Javascript Programming!";
 
-// // with template literals
+// with template literals
 // let message2 = `Hello ${name}! Welcome to my house!`;
 
 // console.log(message);
@@ -39,22 +39,22 @@ console.log('yo!');
 // console.log(`The interest in your savings' account is ${principal * interestRate}`);
 
 
-// // ARRAY DESTRUCTURING //
-// // allows to unpack elements in an array into distinct variables
-// // allows to name array elements with variables insteard of using numbers
-// // helps us with code readability
+//*ARRAY DESTRUCTURING //
+// allows to unpack elements in an array into distinct variables
+// allows to name array elements with variables insteard of using numbers
+// helps us with code readability
 
 
-// /*
-// Syntax:
-// let/const [variableName, variableName] = array;
+/*
+Syntax:
+let/const [variableName, variableName] = array;
 
-// */
+*/
 
 // const fullName = ["Juan", "Dela", "Cruz"];
 // const pet = ["geeko", "tarantula", "centipede"];
 
-// // pre-array destructing
+// *pre-array destructing
 // console.log(fullName[0]);
 // console.log(fullName[1]);
 // console.log(fullName[2]);
@@ -65,21 +65,21 @@ console.log('yo!');
 
 
 
-// // convert the message using values from array elements
+// convert the message using values from array elements
 // console.log(`Hello firstname, middlename, lastname! It's nice to meet you`);
 
 // console.log(`Hello ${fullName[0]}, ${fullName[1]}, ${fullName[2]}! It was nie to meet you!`);
 
 
 
-// // using Array Destructuring using ES6
+// *using Array Destructuring using ES6
 // const [firstName, middleName, lastName] = fullName;
 
 // const [pet1, pet2 , pet3] = pet;
 
 
 
-// // converted each elements into distinct variables
+// converted each elements into distinct variables
 // console.log(firstName);
 // console.log(middleName);
 // console.log(lastName);
@@ -89,7 +89,7 @@ console.log('yo!');
 
 
 
-// // using array destructuring in a function
+//* using array destructuring in a function
 // function introduce(){
 //     console.log(`Hi! My name is ${firstName} ${middleName} ${lastName}`);
 
@@ -100,7 +100,7 @@ console.log('yo!');
 // introduce();
 
 
-// // using array destructuring in a function using parameters and arguments
+// * using array destructuring in a function using parameters and arguments
 // function introduce_2(fn, mn, ln){
 //     console.log(`Hi my name is ${fn} ${mn} ${ln}`);
 
@@ -112,7 +112,7 @@ console.log('yo!');
 
 
 
-// OBJECT DESTRUCTURING //
+//* OBJECT DESTRUCTURING //
 
 /*
 Syntax:
@@ -129,13 +129,13 @@ let/const {propertyName, propertyName} = object;
 
 // }
 
-// // pre-object destructuring
+//* pre-object destructuring
 // console.log(person.first);
 // console.log(person.second);
 // console.log(person.last);
 
 
-// // object destructuring
+//* object destructuring
 
 // const {first, second, last} = person;
 
@@ -145,7 +145,7 @@ let/const {propertyName, propertyName} = object;
 
 
 
-// // object destructuring inside the function
+//* object destructuring inside the function
 // function getCompleteName(first, second, last){
 
 //     console.log(`My name is ${first} ${second} ${last}`);
@@ -156,7 +156,7 @@ let/const {propertyName, propertyName} = object;
 
 
 
-// ARROW FUNCTION //
+//* ARROW FUNCTION //
 // compact alternative syntax to traditional syntax
 /*
 Syntax:
@@ -185,7 +185,8 @@ Hello();
 sayHello();
 
 
-// // EXERCISE 1: DESTRUCTURE ARRAY ELEMENTS
+
+
 // let students = ["John", "Jane", "Judy"];
 
 // const [top1, top2, top3] = students;
@@ -202,7 +203,7 @@ sayHello();
 
 // students.forEach(student => console.log(`Hi! My name is ${student}. Let's be friends!`));
 
-// IMPLICIT RETURN STATEMENT //
+//* IMPLICIT RETURN STATEMENT //
 // these are instances when you can omit the "return" statement
 // this works because even without the "return" statement, javascript implicitly adds it as the result of a function
 
@@ -241,7 +242,7 @@ const product_4 = () => {
 console.log(product_4());
 
 
-// DEFAULT FUNCTION ARGUMENT VALUE
+//* DEFAULT FUNCTION ARGUMENT VALUE
 
 const myName = (name = `User`) => {
     return `Good Morning ${name}`
@@ -250,7 +251,7 @@ const myName = (name = `User`) => {
 console.log(myName("Dahl"));
 
 
-// CLASS BASED OBJECT BLUEPRINT
+// *CLASS BASED OBJECT BLUEPRINT
 // allows us to create or instantiate objects using classes as blueprints
 
 /*
@@ -303,7 +304,7 @@ class dataWeight {
     constructor (name, kilograms){
         this.name = name;
         this.kilograms = kilograms;
-        this.pounds = parseInt(kilograms * 2.20462);
+        this.pounds = parseFloat(kilograms * 2.20462).toFixed(2);
     }
 }
 

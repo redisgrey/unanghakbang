@@ -151,15 +151,18 @@ function product (a,b) {
 }
 console.log(product(2,4));
 
-function averageNum (num1, num2 , num3) {
-    return (num1+num2+num3)/3;
+/*
+Create a function that computes the average of three numbers.
+Create a function that converts meter to kilometer using a return statement
+
+*/
+
+function computeAverage(num1, num2, num3){
+    let sum = num1 + num2 + num3;
+    let average = sum / 3;
+    
+
+    console.log(parseInt(average));
 }
 
-console.log(averageNum(1,2,3));
-
-function convertNumbers (meters) {
-    const m = 1000;
-    console.log("Result in kilometers: ");
-    return (meters/m);
-}
-console.log(convertNumbers(20));
+computeAverage(15, 29, 45);

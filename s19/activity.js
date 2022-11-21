@@ -5,7 +5,7 @@ class dataWeight {
     constructor (name, kilograms){
         this.name = name;
         this.kilograms = kilograms;
-        this.pounds = parseInt(kilograms * 2.20462);
+        this.pounds = parseFloat(kilograms * 2.20462).toFixed(2);
     }
 }
 

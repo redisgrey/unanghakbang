@@ -42,7 +42,7 @@ When a user inputs a valid number, it will display even or odd.
 
 // function oddEven(num){
 //     if(isNaN (num) || typeof parseInt (num) !== "number"){
-//         //isNan - determines whether a values is NaN (not a number) or a number
+        //isNan - determines whether a values is NaN (not a number) or a number
 //         return `Unexpected Input`;
 //     }
 
@@ -80,14 +80,14 @@ When a user inputs a valid number, it will display even or odd.
 
 for (initialization; condition; increment/decrement){
 
-    //create an inner loop
+    create an inner loop
     for (init; cond; incr/decr){
 
-        //statement of inner loop
+        statement of inner loop
 
     }
 
-    //statement of an outer loop
+    statement of an outer loop
 
 }
 
@@ -134,12 +134,12 @@ for (let i = 0; i <= 2; i++){
 // function multiplyNumbers(arr){
 
 //     let product = 1;
-//     // create an outer loop
+    // create an outer loop
 //     for (let k = 0; k < arr.length; k++){
 
 //         for (let l = 0; l < arr[k].length; l++){
 
-//             // create statement in inner loop
+            // create statement in inner loop
 //             product *= arr[k][l];
 
 //         }

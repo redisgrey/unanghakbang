@@ -178,17 +178,17 @@ getTyphoonIntensity(typhoonIntensity);
         case condition1:
             statements
             break;
-            // breaks out the switch block
-            // stops the execution inside the switch block
+            breaks out the switch block
+            stops the execution inside the switch block
 
         case condition2:
             statements
             break;
 
         default:
-            // specifies the code to run if there is no match
-            // like else statement
-            // no break
+            specifies the code to run if there is no match
+            like else statement
+            no break
             statement
 
     }
@@ -272,30 +272,44 @@ judgeColor(color);
 
 
 
-let number = prompt("Enter the first number that comes to mind? yieee birthday ng jowa niya.");
+// let number = prompt("Enter the first number that comes to mind? yieee birthday ng jowa niya.");
 
-function typeofNumber(number){
 
-    switch(number){
+// function typeofNumber(){
 
-        case (number%2 === 0):
-            console.log("It is an even number!");
-        break;
+    
+//     switch(number){
 
-        case (number%2 != 0):
-            console.log("It is an odd number!");
-        break;
+//         case (parseInt(number)%2 === 0):
+//             console.log("It is an even number!");
+//         break;
 
-        default:
-            console.log("sana okeh ka lang.");
+//         case (parseInt(number)%2 != 0):
+//             console.log("It is an odd number!");
+//         break;
 
+//         default:
+//             console.log("sana okeh ka lang.");
+
+//     }
+
+   
+
+// }
+
+function typeOfNumber(number){
+
+    let answer = "";
+
+    if(parseInt(number)%2 === 0){
+        answer = "even";
+    }else{
+        answer ="odd";
     }
 
-    return(number);
-
+    console.log(answer);
 }
 
-typeofNumber(number);
-
+typeOfNumber(10);
 
 

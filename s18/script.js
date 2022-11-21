@@ -310,7 +310,7 @@ let cars = [
 // let foundCar = cars.find(
 //     function(car){
 //         console.log(car);
-//         // displays the objects inside the car array
+        // displays the objects inside the car array
 //         return (car.brand === "toyota");
 //     }
 // );
@@ -342,6 +342,8 @@ let users = [
 	}
 ];
 
+
+
 /*
 Create a new function called login.
 This function should be able to receive an email and a password.
@@ -354,17 +356,17 @@ if we can't find a user with the same email or password: Show an alert: Login Fa
 if we did find a user with the same email or password: Show an alert: Thank you for logging in.
 */
 
-let userLoggedIn = users.find(
-    function(user){
+// let userLoggedIn = users.find(
+//     function(user){
         
-        return (user.username === "kimdhyn");
-    }
-);
+//         return (user.username === "kimdhyn");
+//     }
+// );
 
-console.log(userLoggedIn);
+// console.log(userLoggedIn);
 
-if (userLoggedIn === undefined){
-   alert(`Login Failed. Wrong Credentials.`);
-}else {
-    alert(`Thank you for logging in.`);
-}
+// if (userLoggedIn === undefined){
+//    alert(`Login Failed. Wrong Credentials.`);
+// }else {
+//     alert(`Thank you for logging in.`);
+// }

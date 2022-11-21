@@ -4,27 +4,27 @@ console.log('Yo!');
 
 
 /*
-//Hour
-// if hour is between 6am and 12pm: Good Morning!
-//if hour is between 12pm and 6pm(18:00): Good Afternoon!
-//Otherwise: Good Evening!
+Hour
+if hour is between 6am and 12pm: Good Morning!
+if hour is between 12pm and 6pm(18:00): Good Afternoon!
+Otherwise: Good Evening!
 */
 
-let hour = 20;
+// let hour = 20;
 
-if (hour >= 6 && hour < 12){
+// if (hour >= 6 && hour < 12){
 
-    console.log("Good Morning!");
+//     console.log("Good Morning!");
 
-}else if (hour >= 12 && hour < 18){
+// }else if (hour >= 12 && hour < 18){
 
-    console.log("Good afternoon!");
+//     console.log("Good afternoon!");
 
-}else{
+// }else{
 
-    console.log("Good Evening!");
+//     console.log("Good Evening!");
 
-}
+// }
 
 
 
@@ -35,10 +35,10 @@ if (hour >= 6 && hour < 12){
 
 /*
 Alarm Clock
-//Mon         - 7AM
-//Tue - Thurs - 4AM
-//Fri         - 9AM
-//Sat - Sun   - 8AM
+Mon         - 7AM
+Tue - Thurs - 4AM
+Fri         - 9AM
+Sat - Sun   - 8AM
 */
 
 /*
@@ -83,35 +83,37 @@ switch(day){
 }
 */
 
-let day = "Holiday";
+// let day = "Holiday";
 
-switch(day){
-    case (day = "Monday"):
+// switch(day){
+//     case (day = "Monday"):
 
-        console.log("Wake up at 7AM!");
-        break;
+//         console.log("Wake up at 7AM!");
+//         break;
 
-    case (day = "Tuesday"):
-    case (day = "Wednesday"):
-    case (day = "Thursday"):
+//     case (day = "Tuesday"):
+//     case (day = "Wednesday"):
+//     case (day = "Thursday"):
 
-        console.log("Wake up at 4AM!");
-        break;
+//         console.log("Wake up at 4AM!");
+//         break;
 
-    case (day = "Friday"):
+//     case (day = "Friday"):
         
-        console.log("Wake up at 9AM!");
-        break;
+//         console.log("Wake up at 9AM!");
+//         break;
 
-    case (day = "Saturday"):
-    case (day = "Sunday"):
+//     case (day = "Saturday"):
+//     case (day = "Sunday"):
 
-        console.log("Wake up at 8AM!");
-        break;
+//         console.log("Wake up at 8AM!");
+//         break;
 
-    default:
+//     default:
         
-        console.log("Wake up whenever you want!");
+//         console.log("Wake up whenever you want!");
     
-}
+// }
+
+
 

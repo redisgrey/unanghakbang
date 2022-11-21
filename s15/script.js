@@ -5,7 +5,7 @@ console.log("connected");
 /*
     for (initialization; condition; increment)
     {
-        //code
+        code
     }
     USAGES:
     1. Initialization - initialize the counter variables and EVALUATED ONCE unconditionally before the first execution of the loop body
@@ -18,9 +18,9 @@ console.log("connected");
 /*
 
 for (let i = 0; i <= 5; i++){
-    //i = 0
-    //true
-    //i++ = 1
+    i = 0
+    true
+    i++ = 1
 
     console.log (`This is number ${i}`);
 }
@@ -29,8 +29,8 @@ let herName = "Lady Ada Augusta Byron King";
 
 console.log(herName.length);
 console.log(herName[6]); //d
-//index - position of the character in a string
-//zero based
+index - position of the character in a string
+zero based
 console.log(herName[13]); //s
 
 
@@ -44,9 +44,9 @@ let letter = 0;
 for (letter; letter<herName.length; letter++)
 {
     console.log(herName[letter]);
-    //it displays next line per character
+    it displays next line per character
 }
-//for Loop in an Array
+for Loop in an Array
 let fruits = ["atis", "mango", "durian", "apple mango"];
 
 console.log(fruits[2]); //durian
@@ -57,26 +57,26 @@ let index = 0;
 for (index; index<fruits.length; index++)
 {
     console.log(fruits[index]);
-    //displays the elements of an array
+    displays the elements of an array
 }
 
 */
 
 
 
-// let cars = [
-//     {brand: "Toyota", type: "Sedan"},
-//     {brand: "Mazda", type: "Hatchback"},
-//     {brand: "BMW", type: "Sedan"}
-// ];
+let cars = [
+    {brand: "Toyota", type: "Sedan"},
+    {brand: "Mazda", type: "Hatchback"},
+    {brand: "BMW", type: "Sedan"}
+];
 
-// let x = 0;
-// for (x; x<cars.length; x++)
-// {
-//     console.log(cars[x]); //it displays the object properties of an array
-//     console.log(cars[x].brand);  //it displays the brand inside the object
-//     console.log(cars[x].type); 
-// }
+let x = 0;
+for (x; x<cars.length; x++)
+{
+    console.log(cars[x]); //it displays the object properties of an array
+    console.log(cars[x].brand);  //it displays the brand inside the object
+    console.log(cars[x].type); 
+}
 
 //WHILE LOOP
 
@@ -153,7 +153,7 @@ Enclosed your code inside a function.
 /*
 
 do {
-    // statement
+    statement
 }
 
 while (condition)
