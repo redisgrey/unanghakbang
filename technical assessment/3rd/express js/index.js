@@ -51,10 +51,15 @@ app.delete("/delete-user", (req, res) => {
             users.splice(users[i], 0);
 
             res.send(`User ${users[i].name} is removed from the database`);
+            
+            console.log(users.filter(user => user.name !== req.body.name));
 
         };
 
     }
+
+    
+
 });
 
 
