@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+const { ModalTitle } = require('react-bootstrap');
+
 // * Creation of Schema
 
 const courseSchema = new mongoose.Schema({

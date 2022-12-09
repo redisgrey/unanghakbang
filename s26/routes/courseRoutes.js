@@ -1,0 +1,73 @@
+const express = require("express");
+
+const router = express.Router();
+
+// require userController
+const courseController = require("../controllers/courseController");
+
+// require an authentication
+const auth = require("../auth");
+
+// methods creation
+
+// 1. Create a course
+router.post("/create-course", auth.verify, (req, res) => {
+
+    courseController.createCourse(req.body).then((result) => res.send(result))
+
+})
+
+// 2. Retrieve all courses
+router.get("/", (req, res) => {
+
+    courseController.getAllCourses().then(result => res.send(result))
+
+})
+
+// 3. Retrieve active courses
+router.get("/active-courses", auth.verify, (res) => {
+
+    courseController.getSpecificCourse(req.body.courseName).then(result => res.send(result));
+
+})
+
+// 4. Retrieve a specific course using findOne()
+router.get("/specific-course", auth.verify, (req, res) => {
+
+    courseController.getSpecificCourse(req.body.courseName).then(result => res.send(result));
+
+})
+
+// 5. Retrieve a specific course using findById()
+router.get("/:courseId", auth.verify, (req, res) => {
+
+    let paramsId = req.params.courseId
+
+    courseController.getCourseById(paramsId).then(result => res.send(result));
+
+})
+
+// update isActive status of the course using findOneAndUpdate
+// Update isActive status to false
+router.put("/archive", auth.verify, (req, res) => {
+
+    courseController.archiveCourse(req.body.courseName).then(result => res.send(result))
+
+})
+
+// exercise
+// update isActive status to true
+// method unArchive
+router.put("/unarchive", auth.verify, (req, res) => {
+
+    courseController.unArchiveCourse(req.body.courseName).then(result => res.send(result));
+
+})
+
+//update isActive status using findByIdAndUpdate()
+//set isActive status into false
+router.put('/:courseId/archive', auth.verify, (req, res) => {
+
+    courseController.archiveByCourseId(req.params.courseId).then(result => res.send(result))
+    
+})

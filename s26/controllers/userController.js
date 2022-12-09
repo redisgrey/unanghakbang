@@ -7,6 +7,8 @@ const Course = require("../models/Course");
 const bcrypt = require("bcrypt");
 const { model, trusted } = require("mongoose");
 
+const auth = require("../auth");
+
 module.exports.checkEmail = (reqBody) => {
     const {email} = reqBody;
 
@@ -89,7 +91,7 @@ module.exports.login = (reqBody) => {
 
             if(isPasswordCorrect === true){
 
-                return `Access Token`
+                return { access:auth.createAccessToken(result)}
 
             }else {
 
@@ -176,4 +178,50 @@ module.exports.enroll = async (data) => {
         return false
 
     }
+}
+
+module.exports.newEnroll = (data) => {
+
+    const {userId, courseId} = data;
+
+    return User.findById(useId).then((result, error) => {
+
+        result.enrollments.push({ courseId: courseId });
+
+        if(result){
+
+            console.log(result.enrollments.length);
+
+            if(result.enrollments.length != 0){
+
+                return result.enrollments.find(element => {
+
+                    if(element.courseId == courseId){
+
+                        console.log("if code block")
+
+                        return false
+
+                    } else {
+
+                        return result.save().then(result => {
+
+                            return true
+
+                        })
+
+                    }
+
+                })
+
+            }
+
+        } else {
+
+            return error;
+
+        }
+
+    })
+
 }

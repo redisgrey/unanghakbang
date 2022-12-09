@@ -5,6 +5,9 @@ const router = express.Router();
 // import the userController
 const userController = require("../controllers/userController");
 
+// import the required authorization
+const auth = require("../auth");
+
 // check if email exists
 router.post("/email-exists", (req, res) => {
 
@@ -35,22 +38,40 @@ router.post("/login", (req, res) => {
 });
 
 // retrieving user information
-router.post("/details", (req,res) => {
+router.post("/details", auth.verify, (req,res) => {
 
-    userController.getProfile().then(result => res.send(result));
+    let userData = auth.decode(req.headers.authorization);
+
+    userController.getProfile(userData).then(result => res.send(result));
 
 });
 
 // enrollments
-router.post("/enroll", (req, res) => {
+router.post("/enroll", auth.verify, (req, res) => {
 
-    userController.enroll().then(result => res.send(result));
+    let data = {
+
+        userId: auth.decode(req.header.authorization).id,
+
+        courseId: req.body.courseId
+
+    }
+
+    userController.enroll(data).then(result => res.send(result));
 
 });
 
-router.post("/new-enroll", (req, res) => {
+router.post("/new-enroll", auth.verify, (req, res) => {
 
-    userController.newEnroll().then(result => res.send(result));
+    let data = {
+
+        userId: auth.decode(req.header.authorization).id,
+
+        courseId: req.body.courseId
+
+    }
+
+    userController.newEnroll(data).then(result => res.send(result));
 
 });
 
