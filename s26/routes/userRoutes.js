@@ -1,79 +1,64 @@
 const express = require("express");
-
 const router = express.Router();
-
-// import the userController
+ 
 const userController = require("../controllers/userController");
+const auth = require("./../auth");
 
-// import the required authorization
-const auth = require("../auth");
-
-// check if email exists
+//check if email exists 
 router.post("/email-exists", (req, res) => {
 
-    userController.checkEmail(req.body).then(result => res.send(result));
+	userController.checkEmail(req.body).then( result => res.send(result))
+})
 
-});
-
-// register a user
+//register a user
 // http://localhost:4000/api/users
-router.post("/register", (req,res) => {
+router.post("/register", (req, res) => {
 
-    userController.register(req.body).then(result => res.send(result));
+	userController.register(req.body).then( result => res.send(result))
+})
 
-});
-
-// retrieve users
 router.get("/", (req, res) => {
 
-    userController.getAllUsers().then(result => res.send(result));
+	userController.getAllUsers().then( result => res.send(result))
+})
 
-});
 
-// user login
 router.post("/login", (req, res) => {
 
-    userController.login(req.body).then(result => res.send(result));
+	userController.login(req.body).then(result => res.send(result))
+})
 
-});
+//retrieve user information
+router.get("/details", auth.verify, (req, res) => {
+	
+	let userData = auth.decode(req.headers.authorization)
+	// console.log(userData)
 
-// retrieving user information
-router.post("/details", auth.verify, (req,res) => {
+	userController.getProfile(userData).then(result => res.send(result))
+})
 
-    let userData = auth.decode(req.headers.authorization);
+//enrollments
+router.post("/enroll",async (req, res) => {
 
-    userController.getProfile(userData).then(result => res.send(result));
+	let data = {
+		userId: auth.decode(req.headers.authorization).id,
+		courseId: req.body.courseId
+	}
 
-});
-
-// enrollments
-router.post("/enroll", auth.verify, (req, res) => {
-
-    let data = {
-
-        userId: auth.decode(req.header.authorization).id,
-
-        courseId: req.body.courseId
-
-    }
-
-    userController.enroll(data).then(result => res.send(result));
-
-});
+	return userController.enroll(data).then(result => res.send(result))
+})
 
 router.post("/new-enroll", auth.verify, (req, res) => {
 
-    let data = {
+	let data = {
+		userId: auth.decode(req.headers.authorization).id,
+		courseId: req.body.courseId
+	}
 
-        userId: auth.decode(req.header.authorization).id,
+	userController.newEnroll(data).then(result => res.send(result))
+})
 
-        courseId: req.body.courseId
 
-    }
 
-    userController.newEnroll(data).then(result => res.send(result));
-
-});
 
 module.exports = router;
-
